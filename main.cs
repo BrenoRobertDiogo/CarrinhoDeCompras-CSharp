@@ -3,10 +3,10 @@ using System.Collections.Generic;
 
 class MainClass {
   public static void Main (  ) {
+    Cliente teste = new Cliente();
     
-      Console.WriteLine("aaaaa");
-    
-    
+    teste.Nome = "Breno";
+    Console.WriteLine( teste.Nome );
     
 
   }
