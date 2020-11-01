@@ -1,3 +1,4 @@
+using System;
 class Cliente {
 
   // Dados que pode-se pedir para o cliente
@@ -25,7 +26,20 @@ class Cliente {
   // CHAR
     public char Sexo { get { return sexo; } set{ sexo = value; } } 
 
-  // 
+  public static void analisaSexo(char input){
+    switch (input){
+        case('M'):
+          Console.Write($"👩‍🦰  Produto que a senhorita deseja escolher-> ");
+          break;
+        case('H'):
+          Console.Write($"🧑  Produto que o senhorio deseja escolher-> ");
+          break;
+        default:
+          Console.Write($"👨‍🦲  Produto você deseja escolher-> ");
+          break;
+      }
+  }
+  
   
 
 }
